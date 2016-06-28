@@ -1,0 +1,23 @@
+{
+  "name": "exploring-node-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "using_async.js",
+  "dependencies": {
+    "async": "^2.0.0-rc.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooldumbeldore/exploring-node-modules.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooldumbeldore/exploring-node-modules/issues"
+  },
+  "homepage": "https://github.com/cooldumbeldore/exploring-node-modules#readme"
+}
