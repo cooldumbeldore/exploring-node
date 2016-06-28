@@ -181,7 +181,63 @@ function foreverTry() {
     );
 }
 
-foreverTry();
+function composeTry() {
+    function addFive(num, callback) {
+        callback(null, num + 5);
+    }
 
+    function timesTen(num, callback) {
+        callback(null, num * 10);
+    }
+
+    var calculate = async.compose(addFive, timesTen);
+    calculate(5, function (err, result) {
+        console.log(result);
+    });
+}
+
+function seqTry() {
+    function addFive(num, callback) {
+        callback(null, num + 5);
+    }
+
+    function timesTen(num, callback) {
+        callback(null, num * 10);
+    }
+
+    var calculate = async.seq(addFive, timesTen);
+    calculate(5, function (err, result) {
+        console.log(result);
+    });
+}
+
+
+function retryTry() {
+
+    var opts = {
+        count : -3
+    };
+
+
+    async.retry(5, function (cb, results) {
+        ++this.count;
+        console.log(this.count, results);
+        if (this.count > 0) cb(null, this.count);
+        else cb(new Error("count too low"));
+    }.bind(opts), function (err, results) {
+        console.log(err, results);
+    });
+}
+
+retryTry()
+
+/*
+
+ also checkout:
+ auto
+ cargo
+ times
+ each
+ */
 
 

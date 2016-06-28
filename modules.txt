@@ -1,0 +1,90 @@
+__node__
+async USED
+q
+pm2
+forever
+node-inspector
+node-worker
+hapi
+restify
+yargs
+semver
+redis
+request
+socket.io
+lodash
+underscore
+commander
+stream-adventure
+connect
+tap 
+toobusy
+glob
+node-cron
+ws
+winston
+node-worker
+cluster
+jshint
+github USED
+multiprocessing USED
+express USED
+body-parser USED
+cookie-parser USED
+jade USED
+jsonwebtoken USED
+mongoose USED
+morgan USED
+passport USED
+colors USED
+zen
+
+
+testing?
+benchmarking?
+linting?
+jshint?
+
+__pynode__
+
+slice?
+negative indexing?
+packing?
+decorators?
+list comperhension?
+generators?
+
+
+http://hg.mozilla.org/chatzilla/file/59b46c0bf716/js/lib/utils.js#l136
+
+function dir(object) {
+    stuff = [];
+    for (s in object) {
+        stuff.push(s);
+    }
+    stuff.sort();
+    return stuff;
+}
+
+
+__angular__
+angular ui router
+angular ng router
+angular resource
+consolidate.js
+
+__node tools__
+nesh
+
+__tools__
+jasmine
+bower
+gulp
+grunt
+yo
+yeoman
+Protractor
+json-server
+
+__cool stuff__
+movfuscator
